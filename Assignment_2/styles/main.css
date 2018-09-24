@@ -1,0 +1,278 @@
+*{
+	/* Universal reset: */
+	margin:0;
+	padding:0;
+}
+
+header,footer,
+article,section,
+hgroup,nav,
+figure{
+	/* Giving a display value to the HTML5 rendered elements: */
+	display:block;
+}
+
+html {
+	background-color:white;
+}
+
+body{
+	/* Setting the default text color, size, page background and a font stack: */
+	font-size:0.825em;
+	width:964px;
+	margin:0 auto;
+	border: 3px solid black;
+	background-color:#ccddff;
+	font-family:Arial, Helvetica, sans-serif;
+	/* background-image: url(../images/aircooled.png); */
+}
+
+/* Hyperlink Styles: */
+
+a, a:visited {
+	text-decoration:none;
+	outline:none;
+}
+
+a:hover{
+	font-weight: bolder;
+}
+
+/* Headings: */
+
+
+
+h1{
+	/* The logo text */
+	font-size:3.5em;
+	padding:.5em 0;
+	text-transform:uppercase;
+	margin:0;
+	color:black;
+}
+
+h3{
+	/* The slogan text */
+	font-family:forte,"Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+	font-size:180%;
+	font-weight:normal;
+	padding-bottom: .5em;
+	color:black;
+}
+
+h2{
+	color:black;
+	font-size:2em;
+	font-weight:normal;
+	letter-spacing:0.01em;
+}
+.go_up {
+	float: right; 
+	padding-right: 15px;  
+}
+p{
+	font-size:1em;
+	line-height:1.5em;
+	padding-bottom:1em;
+}
+
+
+.line{
+	/* The dividing line: */
+	height:1px;
+	border-bottom:1.5px solid #416371;
+	overflow:hidden;
+	width:490px;
+	margin-left: 2em;
+}
+
+article .line{
+	/* The dividing line inside of the article is darker: */
+	border-bottom-color:#204656;
+	margin:1.3em 0;
+}
+
+
+/*the header styling*/
+header{
+
+	background-image: -moz-linear-gradient(
+	    30deg,#B7D8EB 0%, #B7D8EB 30%, white 50%,#B7D8EB 80%, #B7D8EB 100%);
+	background-image: -webkit-linear-gradient(
+	    30deg,#B7D8EB 0%, #B7D8EB 30%, white 50%,#B7D8EB 80%, #B7D8EB 100%);
+	background-image: -o-linear-gradient(
+	    30deg,#B7D8EB 0%, #B7D8EB 30%, white 50%,#B7D8EB 80%, #B7D8EB 100%);
+	background-image: linear-gradient(
+	    30deg,#B7D8EB 0%, #B7D8EB 30%, white 50%,#B7D8EB 80%, #B7D8EB 100%);}
+
+header img{
+	float:left;
+	padding-top: 1em;
+	padding-left: .2em;
+}
+
+
+/* The navigation styling: */
+
+#nav_menu ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	position: relative;
+}
+
+#nav_menu ul li {
+	float:left;	
+}
+
+#nav_menu ul li a{
+	color:white;
+	font-family:sans-serif;
+	font-weight:bold;
+	font-size:140%;
+	display:block;
+	text-align:center;
+	width:321.3px;
+	padding:1em 0;
+	background-color: #4d88ff;
+	text-shadow: 1.5px 1.5px black;
+	border-bottom:1.5px solid black;
+}
+
+#nav_menu ul ul{
+	display:none;
+	position:absolute;
+	left:40%;
+	top:100%;
+}
+
+#nav_menu ul ul li{
+	float:none;
+	position: relative;
+}
+
+#nav_menu ul ul li a{
+	border: none;
+	width:180px;
+}
+
+#nav_menu ul li:hover > ul{
+	display:block;
+}
+
+#nav_menu > ul::after {
+	content:"";
+	display:block;
+	clear:both;
+}
+
+#nav_menu  ul ul li ul {
+	position: absolute;
+	left: 100%;
+	top:0;
+}
+
+#nav_menu ul li:hover > ul {
+	display:block;
+}
+
+
+#nav_menu a.current {
+	color:yellow;
+}
+
+#nav_menu a:hover{
+	font-style:italic;
+}
+
+/*left sidebar*/
+#left {
+	float:left;
+	width:180px;
+	border-right:1px solid black;
+	border-bottom:1px solid black;
+	background-color:#bcd5ff;
+}
+
+#left h2{
+	font-size:2em;
+	margin-left:1em;
+	margin-top:.7em;
+}
+
+#left figure {
+	margin-left:1.2em;
+	padding: .3em .1em;
+	font-size:20px;
+	font-weight:bold;
+}
+
+#left a{
+	text-decoration:underline;
+	color: blue
+}
+
+#left img{
+	border:1px solid black;
+}
+
+/* Article styles: */
+section {
+	float:left;
+	width:550px;
+}
+
+article{
+	padding:1.5em 2em 1.5em 2em;
+	color:black;
+}
+
+/* right sidebar */
+#right{
+	float:right;
+	width: 180px;
+}
+
+#right figure{
+	margin-top:3em;
+	margin-right:.8em;
+	margin-bottom:5em;
+	border:1.5px solid #142830;
+	float:right;
+}
+
+#right figcaption{
+	padding:.1em .3em;
+	font-size:90%;
+	font-style:italic;
+}
+
+
+/* Footer styling: */
+
+footer{
+	background-color:#4d88ff;
+	padding-top:10px;
+	padding-bottom:10px;
+	clear:both;
+	line-height:1.5em;
+	font-size:130%;
+	text-align:center;
+	color:black;
+}
+
+
+.link{
+
+}
+
+.link a{
+	color:white;
+}
+
+.copyright{
+	padding-top:.5em;
+}
+
+
+

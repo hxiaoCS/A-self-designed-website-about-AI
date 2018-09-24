@@ -1,0 +1,146 @@
+<!DOCTYPE html> <!-- The new doctype -->
+<html lang="en">
+    <head>
+    
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        
+        <title>Artificial intelligence</title>
+        <link rel="icon" type="image/ico" href="../images/logo2.png">
+		<link rel="stylesheet" type="text/css" href="../styles/normalize.css">
+        <link rel="stylesheet" type="text/css" href="../styles/feedback.css">
+        
+    </head>
+    
+    <body>	
+	
+        <header> 
+				<img src="../images/title_image.png" alt="Title Image" width="160" height="120">
+					<h1>Artificial Intelligence</h1>
+					<h3>Your Feedback is Valuable to us</h3>        
+        </header>
+		<nav id="nav_menu">
+			<ul>
+				<li><a href="../main.html">Home</a></li>
+				<li class="seconditem"><a href="table.html">History</a>
+					<ul>
+						<li><a href="#">1950s</a></li>
+						<li><a href="#">1960s</a>
+							<ul>
+								<li><a href="#">Ray Solomonoff </a></li>
+								<li><a href="#">Edward Feigenbaum </a></li>
+								<li><a href="#">Leonard Uhr</a></li>
+								<li><a href="#">Bertram Raphael</a></li>
+								<li><a href="#">Richard Greenblatt</a></li>
+							</ul>
+						</li>
+						<li><a href="#">1970s</a></li>
+						<li><a href="#">1980s</a></li>
+						<li><a href="#">1990s</a></li>
+					</ul>
+				</li>
+				<li><a  class="current" href="feedback.html">Feedback</a></li>
+			</ul>
+		</nav>
+		<main> 
+			<aside id="left">
+			<!--Images are referenced from https://en.wikipedia.org/wiki/Artificial_intelligence -->
+					<h2>Topics</h2>
+					<figure>
+						<a href="../main.html"><img src="../images/img1.jpeg" title="Home Page"
+						alt="Home Page" width="120" height="100"></a>
+						<figcaption><a href="../main.html">Home</a></figcaption>
+					</figure>
+					<figure>
+						<a href="table.html"><img src="../images/img3.jpg" title="History of Artificial Intelligence" 
+						alt="History of Artificial Intelligence" width="120" height="100" /></a>
+						<figcaption><a href="table.html">History of AI</a></figcaption>
+					</figure>
+					<figure>
+						<a href="feedback.html"><img src="../images/img2.jpg" title="Introduction to Artificial Intelligence"
+						alt="Introduction to Artificial Intelligence" width="120" height="100"></a>
+						<figcaption><a href="feedback.html">Your Feedback</a></figcaption>
+					</figure>
+					
+			</aside>
+			<article>
+				<h1>Your feedback about our page</h1>
+				<form action="#" method="get" name="feedback_form" id="feedback_form">
+					<fieldset>
+						<legend>Visitor Information</legend>
+						<label for="first_name">First Name:</label>
+						<input type="text" name="first_name" id="first_name" tabindex="1" required><br>
+						<label for="last_name">Last Name:</label>
+						<input type="text" name="last_name" id="last_name" tabindex="2" required><br>
+						<label for="email">E-Mail:</label>
+						<input type="email" name="email" id="email" tabindex="3" autofocus required><br>
+					</fieldset>
+					<fieldset>
+						<legend>Feedback</legend>
+						<label for="rate">Rate our page</label>
+						<select name="rate" id="rate" tabindex="4">
+							<optgroup label="Dislike">
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+							</optgroup>
+							<optgroup label="Moderate">
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+							</optgroup>
+							<optgroup label="Like">
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+							</optgroup>
+						</select>
+						<label for="interest">Which parts do you like about this website?</label>
+						<select multiple name="interest" id="interest" tabindex="5">
+							<option>title area</option>
+							<option>menu</option>
+							<option>navigation</option>
+							<option>contents</option>
+							<option>images</option>
+							<option>side bar</option>
+							<option>footer</option>
+						</select>
+						<label for="comment">Please leave your comments</label>
+						<textarea rows="8" cols="52" name="comment" id="comment" tabindex="6"></textarea><br>
+					</fieldset>
+					<fieldset id="buttons">
+						<legend>Submit your feedback</legend>
+						<input type="submit" id="submit" value="submit" onclick="alertFunction()" tabindex="13">
+						<input type="reset" id="reset" value="reset" tabindex="14">
+					</fieldset>
+				</form>
+				<script>
+							function alertFunction(){
+							alert("The feedback has been submitted. Thank you!");
+							}
+				</script>
+			</article>
+			<aside id="right">
+				<form action="#" method="get" name="feedback_form" id="feedback_form_extra">
+					<fieldset id="checkbox">
+						<legend>My website is/was</legend>
+						<input type="checkbox" name="like" id="fun" value="Fun to visit" tabindex="7">Fun to visit<br>
+						<input type="checkbox" name="like" id="welldesigned" value="Well designed" tabindex="8">Well designed<br>
+						<input type="checkbox" name="like" id="goodcolor" value="Uses good colours" tabindex="9">Uses good colours<br>
+						<input type="checkbox" name="like" id="goodcontent" value="Has good contents" tabindex="10">Has good contents<br>
+					</fieldset>
+					<fieldset id="radio">
+						<legend>Will you visit my site again?</legend>
+						<input type="radio" name="visit_again" id="yes" value="yes" tabindex="11">
+						<label for="yes">Yes</label>
+						<input type="radio" name="visit_again" id="no" value="no" tabindex="12">
+						<label for="no">No</label>
+					</fieldset>
+				</form>
+			</aside>	
+		</main>
+		<footer>
+			<p class="link"><a href="mailto:hxiao2692@conestogac.on.ca">Send Us an Email</a> | External Link:<a href="https://futureoflife.org/background/benefits-risks-of-artificial-intelligence/"> Benefits & Risks of Artificial Intelligence</a></p>
+			<p class="copyright">&copy; 2018, Han Xiao All Rights Reserved</p>	
+		</footer>
+	</body>
+</html>
